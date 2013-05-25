@@ -3,12 +3,10 @@
 <div id="content">
 
 <?php include (TEMPLATEPATH . '/banner.php'); ?>
-
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 <div id="post-<?php the_ID(); ?>" class="post">
 <a href="<?php bloginfo('home'); ?>">Home</a> &raquo; <?php the_category(' &raquo; ')?> &raquo; <?php the_title(); ?>
-<?php echo spp(single_post_title( '', false )) ;?>
 <!-- google_ad_section_start -->
 <h1><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 <div class="info">
